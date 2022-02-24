@@ -1,0 +1,1 @@
+#### funções uteis para validações

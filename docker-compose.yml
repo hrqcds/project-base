@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+  # procura o build da imagem
+    build: .
+  # Nome do container no docker
+    container_name: base
+  # Portas expostas -> localhost:Docker
+    ports:
+      - 4000:4000
+  # Pasta onde serão gerados os arquivos -> na raiz do app
+    volumes:
+      - .:/usr/app

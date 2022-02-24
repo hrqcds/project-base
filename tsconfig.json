@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                 
+    "module": "commonjs",                                              
+    "baseUrl": "./src",                               
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@database/*": ["infra/database/*"],
+      "@errors/*": ["infra/errors/*"],
+      "@middlewares/*": ["infra/middlewares/*"],
+      "@utils/*": ["utils//"]
+    },
+    "resolveJsonModule": true,  
+    "esModuleInterop": true,                           
+    "forceConsistentCasingInFileNames": true,  
+    "strict": false,      
+    "skipLibCheck": true 
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "mongo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1"
+  },
+  "devDependencies": {
+    "@prisma/client": "^3.10.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/eslint": "^8.4.1",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1",
+    "prisma": "^3.10.0",
+    "supertest": "^6.2.2",
+    "ts-jest": "^27.1.3",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register --quiet --clear --transpile-only --poll --respawn src/infra/http/express/server",
+    "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles"
+  }
+}
